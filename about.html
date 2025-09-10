@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami - Rayab Store</title>
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="index.html" class="brand">Rayab Store</a>
+    <nav class="toolbar">
+      <a href="index.html" class="tool-link">Beranda</a>
+      <a href="about.html" class="tool-link active">Tentang</a>
+      <a href="index.html#products" class="tool-link">Produk</a>
+      <a href="index.html#contact" class="tool-link">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero reveal">
+    <div class="hero-text">
+      <h1>Tentang Rayab Store</h1>
+      <p>Kami menyediakan berbagai jasa yang anda butuhka dengan layanan cepat, dan pengalaman belanja yang nyaman.</p>
+      <a href="index.html" class="btn primary">Kembali ke Beranda</a>
+    </div>
+  </section>
+
+  <!-- About Cards -->
+  <section class="about-cards container reveal">
+    <div class="card">
+      <h3>Visi</h3>
+      <p>Menjadi toko penyedia jasa online terpercaya dengan pelayanan yang terbaik.</p>
+    </div>
+    <div class="card">
+      <h3>Misi</h3>
+      <ul>
+        <li>Menyediakan pberbagai jasa.</li>
+        <li>menyediakan jasapost.</li>
+        <li>Menyediakan layanan cepat melalui chat WhatsApp.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Komunitas</h3>
+      <p>Bergabung dengan komunitas kami untuk info lebih lanjut, promo, dan event menarik.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/rayab_store17?utm_source=qr&igsh=MTZhY3V6eGVuc2F4dg==" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@rayab_store17?_t=ZS-8zTDXAVv2Dn&_r=1" target="_blank">TikTok</a>
+        <a href="https://github.com/vyx300" target="_blank">github</a>
+        <a href="https://chat.whatsapp.com/KCRSrh2GsbnCBGpkeZB5Ph?mode=ems_copy_c" target="_blank">market</a>
+        <a href="https://chat.whatsapp.com/BV0hCeUBLVXLPE8f2qBWIU?mode=ems_copy_c" target="_blank">play bot 2|by vyx</a>
+        <a href="https://chat.whatsapp.com/IUKrBEKyDGLCIPc5x1wJM6" target="_blank">play bot |by hsz</a>
+        <a href="https://whatsapp.com/channel/0029VbBMjCi9cDDdXduaNn22" target="_blank">all info rayabstore</a>
+        <a href="https://whatsapp.com/channel/0029VbDeYe66xCSUfM4BQw37" target="_blank">TESTI</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> rayabstore. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Tahun Footer otomatis
+    document.getElementById("year").innerText = new Date().getFullYear();
+
+    // Animasi reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 150;
+        if(revealTop < windowHeight - revealPoint){
+          reveals[i].classList.add('active');
+        }
+      }
+    });
+  </script>
+</body>
+</html>

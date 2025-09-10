@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rayab Store</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="#home" class="brand">
+        <img
+          src="data:image/svg+xml;utf8,
+          <svg xmlns='http://www.w3.org/2000/svg' width='120' height='32' viewBox='0 0 240 64'>
+            <rect rx='12' width='240' height='64' fill='%231a1a1a'/>
+            <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle'
+                  font-family='Inter, Arial' font-weight='700' font-size='28' fill='%23ffffff'>
+              RayaVape
+            </text>
+          </svg>"
+          alt="RayaVape Logo"
+          class="logo"
+        />
+      </a>
+      <nav class="toolbar">
+        <a href="#home" class="tool-link">Beranda</a>
+        <a href="#brands" class="tool-link">populer</a>
+        <a href="#products" class="tool-link">Produk</a>
+        <a href="#contact" class="tool-link">Kontak</a>
+      </nav>
+    </div>
+
+    <div class="nav-right">
+      <button id="themeToggle" class="btn icon" title="Light/Dark">🌓</button>
+      <a id="waBtnTop" class="btn primary" target="_blank" rel="noopener">Chat Owner</a>
+      <button id="wishlistBtn" class="btn icon" title="Wishlist">
+        ♡ <span id="wishCount" class="badge">0</span>
+      </button>
+      <button id="cartBtn" class="btn icon" title="Keranjang">
+        🛒 <span id="cartCount" class="badge">0</span>
+      </button>
+      <button id="hamburger" class="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="home" class="container">
+    <!-- Hero Section -->
+    <section class="hero reveal">
+      <div class="hero-text">
+        <h1>Toko Rayab Store</h1>
+        <p>GUNAKAN MODE DEKSTOP AGAR TAMPILAN LEBIH NYAMAN</p>
+        <p>menyediakan kebutuhan online anda. Pesan cepat via WhatsApp.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn primary">Belanja Sekarang</a>
+          <a id="waBtnHero" class="btn ghost" target="_blank" rel="noopener">Tanya Stok</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="vape-illus"></div>
+      </div>
+    </section>
+
+<h1>produk ga muncul? klick aja produk populernya!</h1>
+    <!-- Brands Section -->
+    <section id="brands" class="section reveal">
+      <div class="section-head">
+        <h2>Produk Populer</h2>
+        <div class="chips" id="brandChips"></div>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section id="filters" class="filters reveal">
+      <input id="searchInput" type="search" placeholder="Cari produk atau jasa..." />
+      <select id="filterBrand">
+        <option value="">Semua produk</option>
+      </select>
+      <select id="filterRating">
+        <option value="">Semua Rating</option>
+        <option value="4.5">≥ 4.5</option>
+        <option value="4.0">≥ 4.0</option>
+        <option value="3.5">≥ 3.5</option>
+      </select>
+      <select id="sortPrice">
+        <option value="">Urutkan Harga</option>
+        <option value="asc">Termurah</option>
+        <option value="desc">Termahal</option>
+      </select>
+      <select id="sortRating">
+        <option value="">Urutkan Rating</option>
+        <option value="desc">Tertinggi</option>
+        <option value="asc">Terendah</option>
+      </select>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="grid reveal">
+      <!-- Cards injected by JS -->
+    </section>
+
+    <!-- Contact & Feedback -->
+    <section id="contact" class="contact reveal">
+      <h2>Kontak & Sosial</h2>
+      <div class="socials">
+        <a id="igLink" class="btn ghost" target="_blank" rel="noopener">Instagram</a>
+        <a id="tiktokLink" class="btn ghost" target="_blank" rel="noopener">TikTok</a>
+        <a id="xLink" class="btn ghost" target="_blank" rel="noopener">X</a>
+        <a id="githubLink" class="btn ghost" target="_blank" rel="noopener">github</a>
+      </div>
+
+      <div class="feedback">
+        <h3>Form Penilaian Kepuasan</h3>
+        <form id="feedbackForm">
+          <div class="row">
+            <input type="text" id="fbName" placeholder="Nama (opsional)" />
+            <select id="fbRating" required>
+              <option value="">Pilih rating</option>
+              <option>⭐</option>
+              <option>⭐⭐</option>
+              <option>⭐⭐⭐</option>
+              <option>⭐⭐⭐⭐</option>
+              <option>⭐⭐⭐⭐⭐</option>
+            </select>
+          </div>
+          <textarea id="fbMessage" rows="4" placeholder="Kritik, saran, atau pujian..." required></textarea>
+          <button type="submit" class="btn primary">Kirim via WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scroll Top -->
+  <button id="scrollTop" class="scroll-top" title="Kembali ke atas">▲ scrollTop</button>
+<br>
+<a href="about.html" class="chat-btn" style="bottom: 80px; background:#34a853;">ℹ️ Tentang Kami</a>
+
+<!-- Tombol Chat di semua halaman -->
+<a href="chat.html" id="goChat" class="chat-btn">💬 Chat dengan Rayab Store</a>
+
+<style>
+.chat-btn{
+  position: fixed; bottom: 20px; right: 20px; background:#0a84ff;
+  color:white; padding:15px 18px; border-radius:50px; text-decoration:none; font-size:18px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+.chat-btn:hover{ transform: scale(1.1); }
+</style>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Rayab Store. All rights reserved.</p>
+  </footer>
+  <!-- JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>

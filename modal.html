@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
+</head>
+<body>
+    <!-- ===== MODALS ===== -->
+  <!-- Wishlist Modal -->
+  <div id="wishlistModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('wishlistModal')">&times;</span>
+      <h2>Wishlist</h2>
+      <div id="wishlist-items"></div>
+    </div>
+  </div>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('cartModal')">&times;</span>
+      <h2>Keranjang</h2>
+      <div id="cart-items"></div>
+      <p id="cart-total"></p>
+      <button onclick="checkoutCart()">Checkout via WhatsApp</button>
+    </div>
+  </div>
+
+</body>
+<script src="js/modal.js">
+</script>
+</html>
