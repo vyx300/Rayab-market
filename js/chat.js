@@ -107,7 +107,7 @@ chatButtons.querySelectorAll("button").forEach(btn=>{
       case "harga": botTyping("Mau kirim WA untuk info harga?",()=>botMsg("Klik tombol WA untuk chat.",null,toWA(OWNER_WA_ORDER,"Halo, saya ingin menanyakan harga produk."))); break;
       case "order": botTyping("Pilih kategori produk:",showCategoryButtons); break;
       case "admin": botTyping("Chat langsung admin:",()=>botMsg("Klik tombol WA untuk chat.",null,toWA(OWNER_WA_FEEDBACK,"Halo min, saya mau bertanya."))); break;
-      case "faq": botTyping("FAQ:\n💳 Pembayaran: Transfer/ E-wallet\n📦 Pengiriman: JNE / SiCepat\n🛡 Garansi: 1 minggu\n↩️ Refund: Chat admin"); break;
+      case "faq": botTyping("FAQ:\n💳 Pembayaran: Transfer/ E-wallet/dana/qris\n SiCepat\n🛡 Garansi: 1 minggu\n↩️ NO Refund: Chat admin"); break;
       case "produk": PRODUCTS.forEach(p=>botMsg(`<b>${p.name}</b><br>Rp${p.price.toLocaleString()}`,p.image,toWA(OWNER_WA_ORDER,`Halo, saya ingin memesan ${p.name}`))); break;
       case "rekomendasi": recommendProducts("best"); break;
       case "rating": botTyping("Berikan rating 1-5 ⭐:",()=>botMsg("Klik tombol WA untuk rating.",null,toWA(OWNER_WA_FEEDBACK,"Halo, saya ingin memberikan rating produk."))); break;
