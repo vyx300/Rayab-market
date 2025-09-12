@@ -31,7 +31,7 @@ const PRODUCTS = [
   {id:"g1", brand:"BOT whatsapp", name:"sewa bot whatsapp jaga grup 2 minggu 2 grup", price:8000, rating:4.4, image:"assets/product/sewa bot wa.jpg"},
   {id:"g2", brand:"aplikasi", name:"aplikasi ban/unban wa1", price:7000, rating:4.5, image:"assets/product/apkban1.jpg"},
   {id:"g2", brand:"aplikasi", name:"aplikasi ban/unban wa2", price:7000, rating:4.5, image:"assets/product/apkban2.jpg"},
-  {id:"g2", brand:"aplikasi", name:"aplikasi virus/spm", price:15000, rating:4.5, image:"assets/product/elite_logo.png"},
+  {id:"g2", brand:"virus spam", name:"aplikasi virus/spm", price:15000, rating:4.5, image:"assets/product/elite_logo.png"},
   {id:"g2", brand:"nokos", name:"nokos indo", price:6000, rating:4.5, image:"assets/product/nokos indo.jpg"},
 ];
 
