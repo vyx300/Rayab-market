@@ -187,7 +187,7 @@ function addToWish(id){
 }
 function waOrder(id){
   const p = PRODUCTS.find(x=>x.id===id);
-  const text = `Halo Min, saya ingin memesan:\n- Produk: ${p.name}\n- Merek: ${p.brand}\n- Harga: ${fmt(p.price)}\n\nMohon info ketersediaan, tahap-tahap & payment.`;
+  const text = `Halo Min, saya ingin memesan:\n- Produk: ${p.name}\n- Jenis: ${p.brand}\n- Harga: ${fmt(p.price)}\n\nMohon info ketersediaan, tahap-tahap & payment.`;
   window.open(toWA(OWNER_WA_ORDER, text), "_blank"); // pakai nomor order
 }
 
