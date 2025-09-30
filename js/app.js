@@ -1,4 +1,4 @@
-const OWNER_WA_ORDER = "628388521107";     // Pemesanan & keranjang/wishlist
+const OWNER_WA_ORDER = "6283849745507";     // Pemesanan & keranjang/wishlist
 const OWNER_WA_FEEDBACK = "6283849745507"; // Feedback & rating & chat owner
 
 const SOCIALS = {
