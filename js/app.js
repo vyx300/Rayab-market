@@ -33,7 +33,7 @@ const PRODUCTS = [
   {id:"g2", brand:"aplikasi", name:"aplikasi ban/unban wa2", price:7000, rating:4.5, image:"assets/product/apkban2.jpg"},
   {id:"g2", brand:"aplikasi", name:"aplikasi virus/spm 1", price:15000, rating:4.5, image:"assets/product/elite_logo.png"},
   {id:"g2", brand:"aplikasi", name:"aplikasi virus/phising", price:15000, rating:4.5, image:"assets/product/elite_logo.png"},
-  {id:"g2", brand:"aplikasi", name:"aplikasi virus/mlw", price:15000, rating:4.5, image:"assets/product/elite_logo.png"},
+  {id:"g2", brand:"aplikasi", name:"aplikasi virus/mlw", price:15000, rating:4.5, image:"assets/product/ic_launcher.png"},
   {id:"g2", brand:"aplikasi", name:"aplikasi virus/spyw", price:15000, rating:4.5, image:"assets/product/elite_logo.png"},
   {id:"g2", brand:"nokos", name:"nokos indo", price:6000, rating:4.5, image:"assets/product/nokos indo.jpg"},
 ];
